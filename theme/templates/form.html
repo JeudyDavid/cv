@@ -1,0 +1,96 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<section class="text-gray-400 bg-gray-900 body-font min-h-screen bg-gray-00 flex flex-col justify-center py-12 px-6 lg:px-24">
+
+  <form>
+    <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Non</label>
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="David" required="">
+        </div>
+        <div>
+            <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Siyati</label>
+            <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Jeudy" required="">
+        </div>
+
+        <div>
+          <label for="birthday" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Dat ou fèt</label>
+          <input type="text" id="birthday" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="14 decembre 2000" required="">
+      </div>
+
+
+        <div>
+            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">telefòn</label>
+            <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="3435-9623"  required="">
+        </div>
+        <div>
+
+  
+          <label for="street-address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">kote ou rete</label>
+          <input type="text" id="street-address" id="street-address" autocomplete="street-address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nazon Avenue martin luther king" required="">
+      </div>  
+      <div>
+          <label for="imel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">imel</label>
+          <input type="text" id="imel" autocomplete="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="jeudydavid2@gmail.com"  required="">
+      </div>
+        <div>
+            <label for="linkedin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lyen linkedin</label>
+            <input type="url" id="Linkedin" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="linkedin.com/@username">
+        </div>
+        <div>
+          <label for="github" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lyen github</label>
+          <input type="url" id="github" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="github.com/@username">
+      </div>
+      <div>
+        <label for="portfolio" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lyen pòtfolio</label>
+        <input type="url" id="portfolio" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="davidjeudy.me">
+    </div>
+    </div>
+    <div>
+      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Profil</label>
+      <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Je suis Marc André..."></textarea>
+    </div>
+    <div id="experience_option" class="mt-5">
+      <label for="experience" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Eksperyans</label>
+      <input type="text" id="experience" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Eksperyans" required="">
+    </div>
+    <div class="flex justify-center w-full mt-5">
+      <button id="add_experience" type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 text-center">+</button>
+    </div>
+    <div class="mt-5">
+      <label for="skills" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">skills</label>
+      <input type="text" id="skills" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Python,Javacript,Java" required="">
+    </div>
+    <div class="flex justify-center w-full mt-5">
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 text-center">+</button>
+    </div>
+    <div class="mt-5">
+      <label for="Langues" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Langues</label>
+      <input type="text" id="langues" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Francais,Creole,Anglais" required="">
+    </div>
+    <div class="flex justify-center w-full mt-5">
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 text-center">+</button>
+      </div>
+    <div class="mt-5">
+      <label for="realization" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Realization</label>
+      <input type="text" id="realization" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Creation d'un site web" required="">
+    </div>
+    <div class="flex justify-center w-full mt-5">
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 text-center">+</button>
+    </div>
+    <button type="submit" class="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+</form>
+
+  
+</section>
+
+
+
+
+{% endblock %}
+
+
+
+
+
