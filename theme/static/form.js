@@ -1,9 +1,10 @@
 
 var experience_option = document.getElementById('experience_option');
+var remove = document.getElementById('remove_experience');
 var add = document.getElementById('add_experience');
 c = 1
 
-add_experience.onclick = function(){
+add.onclick = function(){
   var newField = document.createElement('input');
   newField.setAttribute('type','text');
   newField.setAttribute('id','experience'+c);
@@ -14,10 +15,11 @@ add_experience.onclick = function(){
   c = c+1
 } 
 
-remove_fields.onclick = function(){
-    var input_tags = survey_options.getElementsByTagName('input');
-    if(input_tags.length > 2) {
-      survey_options.removeChild(input_tags[(input_tags.length) - 1]);
+remove_experience.onclick = function(){
+    var input = experience_option.getElementsByTagName('input');
+    console.log(input.length)
+    if(input.length > 1) {
+      experience_option.removeChild(input[(input.length) - 1]);
     }
 }
 
